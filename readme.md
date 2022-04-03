@@ -5,3 +5,11 @@
 https://nixos.org/manual/nixpkgs/stable/#fun-makeWrapper
 
 https://github.com/NixOS/nixpkgs/blob/master/pkgs/build-support/setup-hooks/make-wrapper.sh
+
+## Usage
+
+```
+nix shell github:polygon/make-wrapper
+
+makeWrapper <executable> <out-path> [<args> ...]
+wrapProgram <executable> [<args> ...]
