@@ -17,6 +17,7 @@
         packages.make-wrapper = pkgs.callPackage ./make-wrapper.nix { 
           mkwrapper-extract = self.packages.${system}.mkwrapper-extract;
         };
+        defaultPackage = self.packages.${system}.make-wrapper;
       }
     );
 }
